@@ -57,6 +57,7 @@ class MailAdapter {
 				mesg['merge_' + i ] = opts.variables[i];
 			}
 		}
+
 		// Clean
 		for (var i in mesg) {
 			if(!mesg[i]){

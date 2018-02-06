@@ -1,6 +1,6 @@
 {
   "name": "parse-server-elasticemail",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parse Server ElesticEmail",
   "main": "index.js",
   "repository": {
