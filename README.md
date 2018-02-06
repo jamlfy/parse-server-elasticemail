@@ -10,12 +10,12 @@ Allows your Parse Server app to send template-based emails through ElasticEmail.
 
 ```
 var server = ParseServer({
-	// Is to verify the users
+	// Is to verify the users 
 	verifyUserEmails: true 
 	emailAdapter: {
 		module : 'parse-server-elasticemail',
 		options : {
-			// Your API KEY
+			// Your API KEY (Required)
 			apiKey: '-- API --',
 			// The templates
 			templates : {

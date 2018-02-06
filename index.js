@@ -47,9 +47,9 @@ class MailAdapter {
 			mesg.from = (this.config.template[mesg.template] && this.config.template[mesg.template].subject) || this.config.fromAddress;
 			mesg.to = options.user.get('email');
 			mesg.subject = (this.config.template[mesg.template] && this.config.template[mesg.template].subject);
-			mesg.merge_link = options.link;
-			mesg.merge_appName = options.appName;
-			mesg.merge_user = options.user;
+			mesg.merge_app_link = options.link;
+			mesg.merge_app_mame = options.appName;
+			mesg.merge_app_user = options.user;
 		}
 
 		if(opts.variables){
