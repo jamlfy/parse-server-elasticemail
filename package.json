@@ -1,0 +1,19 @@
+{
+  "name": "parse-server-elasticemail",
+  "version": "1.0.0",
+  "description": "Parse Server ElesticEmail",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejonext/parse-server-elasticemail.git"
+  },
+  "author": "AlejoNext <alejonext@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alejonext/parse-server-elasticemail/issues"
+  },
+  "homepage": "https://github.com/alejonext/parse-server-elasticemail#readme",
+  "dependencies": {
+    "elastic-email-client": "^1.0.0"
+  }
+}
