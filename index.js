@@ -19,7 +19,8 @@ class MailAdapter {
 		}
 
 		for (let name in options.templates) {
-			if(typeof options.templates[name] != 'string' && typeof options.templates[name] != 'object' ){
+			if ( typeof options.templates[name] != 'string'
+				&& typeof options.templates[name] != 'object' ){
 				throw new Error(ERRORS.bad_template_config);
 			}
 		}

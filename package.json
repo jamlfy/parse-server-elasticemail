@@ -1,6 +1,6 @@
 {
   "name": "parse-server-elasticemail",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Parse Server ElesticEmail",
   "main": "index.js",
   "repository": {
@@ -14,6 +14,6 @@
   },
   "homepage": "https://github.com/alejonext/parse-server-elasticemail#readme",
   "dependencies": {
-    "elastic-email-client": "^1.0.0"
+    "elastic-email-client": "1.1.0"
   }
 }
