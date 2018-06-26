@@ -29,7 +29,7 @@ class MailAdapter {
 		this.elastic = new ElasticEmail(options.apiKey);
 	}
 
-	_senderMail(opts, isDirect){
+	sendMail(opts, isDirect){
 		var mesg = { template : opts.template };
 
 		if(isDirect){
@@ -71,16 +71,20 @@ class MailAdapter {
 
 	sendPasswordResetEmail(variables) {
 		let template = ( this.config.templates.passwordResetEmail && this.config.templates.passwordResetEmail.template ) || this.config.templates.passwordResetEmail || 'passwordResetEmail'
-		return this._sendMail({ template, variables });
+		return this.sendMail({ template, variables });
 	}
 
 	sendPasswordResetEmail(variables) {
 		let template = ( this.config.templates.verificationEmail && this.config.templates.verificationEmail.template ) || this.config.templates.verificationEmail || 'passwordResetEmail'
-		return this._sendMail({ template, variables });
+		return this.sendMail({ template, variables });
 	}
 
 	send({ template, subject, fromAddress, recipient, variables, extra }) {
-		return this._sendMail({ template, subject, fromAddress, recipient, variables, extra }, true);
+		return this.sendMail({ template, subject, fromAddress, recipient, variables, extra }, true);
+	}
+
+	validateAdapter(){
+		this.elastic.Account.Load();
 	}
 }
 
